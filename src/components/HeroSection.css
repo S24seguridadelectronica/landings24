@@ -1,0 +1,72 @@
+.hero-section {
+  position: relative; /* Permite la colocación absoluta del botón */
+  height: 100vh;
+  background-color: #007bff;
+  color: white;
+  padding: 0; /* Asegura que no haya padding alrededor del contenedor */
+}
+
+.hero-row {
+  display: flex;
+  flex-wrap: nowrap; /* Asegura que las columnas no se envuelvan */
+}
+
+.text-column, .image-column {
+  flex: 1; /* Asegura que ambas columnas ocupen el 50% del ancho */
+  padding: 20px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: #ff4757;
+  border: none;
+  transition: transform 0.3s ease;
+  animation: vibrate 0.5s infinite; /* Aplicar animación al botón */
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px; /* Ajusta el tamaño máximo de la imagen si es necesario */
+}
+
+.floating-button {
+  position: absolute; /* Posiciona el botón de forma absoluta respecto al contenedor */
+  top: 100%; /* Ajusta la posición vertical del botón */
+  left: 50%; /* Ajusta la posición horizontal del botón */
+  transform: translate(-50%, -50%); /* Centra el botón en el contenedor */
+  z-index: 10; /* Asegura que el botón esté por encima del contenido */
+}
+
+@keyframes vibrate {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
