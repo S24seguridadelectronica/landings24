@@ -1,0 +1,41 @@
+/* TerceraSeccion.css */
+.tercera-seccion {
+  padding: 20px;
+  background-color: yellow; /* Fondo amarillo */
+}
+
+.tercera-row {
+  display: flex;
+  align-items: center;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tercera-title {
+  font-size: 2rem;
+}
+
+.tercera-subtitle {
+  font-size: 1.2rem;
+}
+
+.image-column {
+  text-align: center;
+}
+
+.tercera-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.floating-button {
+  margin-top: 20px;
+}
+
+.tercera-button {
+  font-size: 1rem;
+}
